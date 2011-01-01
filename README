@@ -1,0 +1,9 @@
+These are my dotfiles for zsh, vim and other stuff like irbrc, railsrc and gitconfig.
+
+Some of the files and generators are from hashrocket (github.com/hashrocket/dotmatrix) and ryanb (github.com/ryanb/dotfiles).
+Thx for the awesome stuff.
+
+
+At this point I try to merge the things that might be usefull for me from the above repos and my configs.
+
+So be carefull when you want to use this, it's still work in progress.
