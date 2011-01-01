@@ -1,4 +1,9 @@
-colorscheme railscasts
+if has("gui_running")
+  colorscheme railscasts
+else
+  set t_Co=256
+  colorscheme railscasts
+endif
 
 let mapleader = "," " Change From Backslash to Comma in commands \a -> ,a
 
