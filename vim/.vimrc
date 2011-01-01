@@ -8,7 +8,7 @@ filetype plugin indent on
 
 augroup vimrc
   autocmd!
-  autocmd GuiEnter * set guifont=Meslo_LG_M_DZ:h12 guioptions-=T columns=120 lines=70 number
+  autocmd GuiEnter * set guifont=Meslo_LG_M_DZ:h12 guioptions-=T columns=190 lines=47 number
 augroup END
 
 if filereadable(expand('~/.vimrc.local'))
