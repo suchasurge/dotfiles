@@ -33,3 +33,6 @@ vmap <C-Down> ]egv
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
+
+" This is a dependency for vim-textobj-rubyblock
+runtime macros/matchit.vim
