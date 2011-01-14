@@ -1,5 +1,6 @@
 if has("gui_running")
   colorscheme railscasts
+  :set cursorline
 else
   set t_Co=256
   colorscheme railscasts
