@@ -18,6 +18,9 @@ set expandtab
 "tab-completion for buffers
 set wildmenu
 
+" highlight search
+set hls
+
 " Stuf for omnicppcomplete and supertab
 filetype plugin on
 set ofu=syntaxcomplete#Complete
