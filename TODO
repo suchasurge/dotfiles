@@ -1,2 +1,4 @@
 * add cinderella.profile or handle cinderella elsewhere
 * add or modify functions to link the vim files. existing script is in vim/bin and the Rakefile
+* remove vim/.vim/plugin/hashrocket.vim
+* add Ctags
