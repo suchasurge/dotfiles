@@ -63,3 +63,4 @@ get_bundle ervandew supertab
 get_bundle kana vim-textobj-user
 get_bundle nelstrom vim-textobj-rubyblock
 get_bundle vim-scripts ack.vim
+get_bundle godlygeek tabular
