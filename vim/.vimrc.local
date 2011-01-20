@@ -23,6 +23,9 @@ set wildmenu
 " highlight search
 set hls
 
+"remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Stuf for omnicppcomplete and supertab
 filetype plugin on
 set ofu=syntaxcomplete#Complete
