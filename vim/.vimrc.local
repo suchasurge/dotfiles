@@ -26,7 +26,7 @@ set hls
 "remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Stuf for omnicppcomplete and supertab
+"Stuff for omnicppcomplete and supertab
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 set completeopt=longest,menuone
