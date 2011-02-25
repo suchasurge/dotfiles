@@ -12,6 +12,9 @@ let mapleader = "," " Change From Backslash to Comma in commands \a -> ,a
 " NERDTree (Press ,d)
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
+" Gundo Vim (f5)
+map <leader>gu :execute ':GundoToggle'<CR>
+
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2

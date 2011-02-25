@@ -59,7 +59,7 @@ get_bundle vim-ruby vim-ruby
 get_bundle wgibbs vim-irblack
 get_bundle msanders snipmate.vim
 get_bundle vim-scripts OmniCppComplete
-get_bundle ervandew supertab
 get_bundle kana vim-textobj-user
 get_bundle nelstrom vim-textobj-rubyblock
 get_bundle godlygeek tabular
+get_bundle vim-scripts Gundo
