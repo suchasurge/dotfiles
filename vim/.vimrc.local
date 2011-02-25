@@ -29,14 +29,6 @@ set hls
 "remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-"Stuff for omnicppcomplete and supertab
-filetype plugin on
-set ofu=syntaxcomplete#Complete
-set completeopt=longest,menuone
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
-highlight Pmenu guibg=brown gui=bold
-
 " Bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
