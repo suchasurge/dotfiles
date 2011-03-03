@@ -64,3 +64,18 @@ function! s:align()
   endif
 endfunction
 
+
+" command to open files with uncommitted changes
+" https://github.com/garybernhardt/dotfiles/commit/86d12f24cd2301af99a2966f0dc9a082cdee2cb7
+function! OpenChangedFiles()
+  only " Close all windows, unless they're modified
+  let status = system('git ls-files -m')
+  let filenames = split(status, "\n")
+  exec "edit " . filenames[0]
+  for filename in filenames[1:]
+    exec "sp " . filename
+  endfor
+endfunction
+command! OpenChangedFiles :call OpenChangedFiles()
+
+
