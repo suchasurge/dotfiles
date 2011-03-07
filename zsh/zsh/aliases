@@ -27,6 +27,7 @@ alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
+alias grep='grep --color=auto'
 
 # commands starting with % for pasting from web
 alias %=' '
