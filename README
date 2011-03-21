@@ -7,3 +7,8 @@ Thx for the awesome stuff.
 At this point I try to merge the things that might be usefull for me from the above repos and my configs.
 
 So be carefull when you want to use this, it's still work in progress.
+
+
+If you want to use your MacVim in the terminal:
+
+sudo ln -s /Applications/MacVim.app/Contents/MacOS/Vim /usr/bin/vim
