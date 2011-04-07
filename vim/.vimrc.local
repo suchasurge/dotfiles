@@ -110,3 +110,5 @@ let g:syntastic_disabled_filetypes = ['html']
 if &diff
   let g:syntastic_auto_loc_list=2
 endif
+
+let g:private_snippets_dir = "~/.vim/snippets/"
