@@ -32,7 +32,5 @@ alias grep='grep --color=auto'
 # commands starting with % for pasting from web
 alias %=' '
 
-alias git='/opt/local/bin/git'
-
 # use mac_vim terminal app
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
