@@ -33,4 +33,4 @@ alias grep='grep --color=auto'
 alias %=' '
 
 # use mac_vim terminal app
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vim='/Users/fmueller/Developer/Cellar/macvim/7.3-57/MacVim.app/Contents/MacOS/Vim'
