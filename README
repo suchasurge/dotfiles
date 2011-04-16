@@ -9,6 +9,10 @@ At this point I try to merge the things that might be usefull for me from the ab
 So be carefull when you want to use this, it's still work in progress.
 
 
-If you want to use your MacVim in the terminal:
+To use MacVim in the terminal, there is an 'vim' alias in the zsh config files.
+This only works if you installed MacVim via homebrew
+
+
+If you are not using homebrew but you want to use your MacVim in the terminal:
 
 sudo ln -s /Applications/MacVim.app/Contents/MacOS/Vim /usr/bin/vim
