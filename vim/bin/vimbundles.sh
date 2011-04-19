@@ -65,3 +65,4 @@ get_bundle vim-scripts Gundo
 get_bundle rson vim-conque
 get_bundle scrooloose syntastic
 get_bundle vim-scripts Io-programming-language-syntax
+get_bundle jgdavey vim-railscasts
