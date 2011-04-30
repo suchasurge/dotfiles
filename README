@@ -9,6 +9,9 @@ At this point I try to merge the things that might be usefull for me from the ab
 So be carefull when you want to use this, it's still work in progress.
 
 
+You can symlink all the stuff with ./bin/hlink
+
+
 To use MacVim in the terminal, there is an 'vim' alias in the zsh config files.
 This only works if you installed MacVim via homebrew
 
