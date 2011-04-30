@@ -32,5 +32,11 @@ alias grep='grep --color=auto'
 # commands starting with % for pasting from web
 alias %=' '
 
+# Ubi stuff...
+alias ubi_four='ssh root@four.ubilabs.net'
+
+# Private stuff
+alias eulando_server='ssh root@50.22.248.35'
+
 # use mac_vim terminal app
 alias vim='~/Developer/Cellar/macvim/7.3-57/MacVim.app/Contents/MacOS/Vim'

@@ -7,4 +7,3 @@ gem: --no-ri --no-rdoc
 :sources:
 - http://rubygems.org
 :backtrace: false
-rdoc: --inline-source --line-numbers --format=html --template=hanna
