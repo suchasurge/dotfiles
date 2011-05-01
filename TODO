@@ -1,2 +1,3 @@
 * add cinderella.profile or handle cinderella elsewhere
 * add Ctags
+* switch from e-macs keybindings to vi-keybindings and make the current mode visual in prompt
