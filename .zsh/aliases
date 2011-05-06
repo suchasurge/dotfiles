@@ -19,12 +19,7 @@ alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
-alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 alias grep='grep --color=auto'
@@ -34,6 +29,7 @@ alias %=' '
 
 # Ubi stuff...
 alias ubi_four='ssh root@four.ubilabs.net'
+alias ci_server='ssh joe@192.168.1.108'
 
 # Private stuff
 alias eulando_server='ssh root@50.22.248.35'
