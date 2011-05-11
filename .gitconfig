@@ -31,3 +31,5 @@
 [merge]
     tool = vimdiff
 
+[mergetool]
+	keepBackup = false
