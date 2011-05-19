@@ -168,4 +168,7 @@ map <leader>T :call RunNearestTest()<cr>
 " switch between the last two files
 nnoremap <leader><leader> <c-^>
 
-
+" Edit or view files in same directory as current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
