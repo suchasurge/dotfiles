@@ -98,7 +98,7 @@ vmap < <<CR>gv
 " use signs to indicate lines with errors
 " only if signs are available
 if has('signs')
-   let g:syntastic_enable_signs = 1
+  let g:syntastic_enable_signs = 1
 endif
 
 " automatically open the location list when a buffer has errors
@@ -165,5 +165,7 @@ endfunction
 map <leader>t :call RunTestFile()<cr>
 map <leader>T :call RunNearestTest()<cr>
 
+" switch between the last two files
+nnoremap <leader><leader> <c-^>
 
 
