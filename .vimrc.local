@@ -169,7 +169,8 @@ map <leader>f :CommandT<cr>
 " Open files, limited to the directory of the current file, with <leader>gf
 " This requires the %% mapping found below.
 map <leader>gf :CommandT %%<cr>
-map <leader>gc :CommandT app/views<cr>
+map <leader>gv :CommandT app/views<cr>
+map <leader>gc :CommandT app/controllers<cr>
 map <leader>gm :CommandT app/models<cr>
 map <leader>gh :CommandT app/helpers<cr>
 map <leader>gl :CommandT lib<cr>
