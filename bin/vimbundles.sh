@@ -57,7 +57,6 @@ get_bundle vim-ruby vim-ruby
 get_bundle msanders snipmate.vim
 get_bundle kana vim-textobj-user
 get_bundle nelstrom vim-textobj-rubyblock
-get_bundle godlygeek tabular
 get_bundle vim-scripts Gundo
 get_bundle scrooloose syntastic
 get_bundle vim-scripts Io-programming-language-syntax
@@ -65,3 +64,4 @@ get_bundle jgdavey vim-railscasts
 get_bundle kchmck vim-coffee-script
 get_bundle gregsexton gitv
 get_bundle wincent Command-T
+get_bundle int3 vim-extradite
