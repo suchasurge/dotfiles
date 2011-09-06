@@ -5,6 +5,8 @@ if has("gui_running")
   :set guioptions-=r
 elseif &t_Co > 2
   set t_Co=256
+  " enable mouse support
+  set mouse=a
 endif
 
 let mapleader = "," " Change From Backslash to Comma in commands \a -> ,a
