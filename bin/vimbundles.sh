@@ -61,6 +61,7 @@ get_bundle vim-scripts Gundo
 get_bundle scrooloose syntastic
 get_bundle vim-scripts Io-programming-language-syntax
 get_bundle jgdavey vim-railscasts
+get_bundle altercation vim-colors-solarized
 get_bundle kchmck vim-coffee-script
 get_bundle wincent Command-T
 get_bundle int3 vim-extradite
