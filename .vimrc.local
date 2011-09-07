@@ -1,12 +1,23 @@
-colorscheme railscasts
+" highlight current line
+set cursorline
 
 if has("gui_running")
-  :set cursorline
-  :set guioptions-=r
+  colorscheme railscasts
+  set guioptions-=r
 elseif &t_Co > 2
   set t_Co=256
   " enable mouse support
   set mouse=a
+  set number
+  " customize statusline and display usefull infos
+  set laststatus=2
+  set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+  " enable solarized colorcheme
+  syntax enable
+  set background=dark
+  " enable following when solorized palette not used
+  "let g:solarized_termcolors=256
+  colorscheme solarized
 endif
 
 let mapleader = "," " Change From Backslash to Comma in commands \a -> ,a
