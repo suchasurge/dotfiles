@@ -55,3 +55,4 @@ get_bundle vim-scripts Io-programming-language-syntax
 get_bundle altercation vim-colors-solarized
 get_bundle kchmck vim-coffee-script
 get_bundle wincent Command-T
+get_bundle jgdavey vim-railscasts
