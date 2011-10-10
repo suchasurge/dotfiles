@@ -1,6 +1,9 @@
 " highlight current line
 set cursorline
 
+command! W w
+command! Q q
+
 if has("gui_running")
   colorscheme railscasts
   set guioptions-=r
