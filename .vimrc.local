@@ -199,3 +199,6 @@ nnoremap <leader><leader> <c-^>
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
+
+" enable Filetype for iolanguage
+au BufNewFile,BufRead *.io set filetype=io
