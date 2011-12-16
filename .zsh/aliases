@@ -34,6 +34,11 @@ alias ci_server='ssh joe@192.168.1.108'
 # Private stuff
 alias eulando_server='ssh root@50.22.248.35'
 
+alias elasticsearch_start='elasticsearch -f -D es.config=$HOME/Developer/Cellar/elasticsearch/0.18.5/config/elasticsearch.yml'
+alias mongodb_start="mongod run --config $HOME/Developer/Cellar/mongodb/2.0.1-x86_64/mongod.conf"
+alias postgres_start="pg_ctl -D $HOME/Developer/var/postgres -l $HOME/Developer/var/postgres/server.log start"
+alias postgres_stop="pg_ctl -D $HOME/Developer/var/postgres stop -s -m fast"
+
 # use mac_vim terminal app
 alias vim='~/Developer/Cellar/macvim/7.3-61/MacVim.app/Contents/MacOS/Vim'
 

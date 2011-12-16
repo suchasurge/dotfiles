@@ -3,6 +3,8 @@ set cursorline
 
 command! W w
 command! Q q
+command! Qa qa
+command! Wa wa
 
 if has("gui_running")
   colorscheme railscasts
