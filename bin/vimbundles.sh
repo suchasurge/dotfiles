@@ -45,6 +45,7 @@ get_bundle tpope vim-pathogen
 get_bundle tpope vim-rake
 get_bundle tpope vim-rails
 get_bundle tpope vim-surround
+get_bundle tpope vim-rvm
 get_bundle vim-ruby vim-ruby
 get_bundle msanders snipmate.vim
 get_bundle kana vim-textobj-user
