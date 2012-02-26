@@ -16,7 +16,7 @@ elseif &t_Co > 2
   set number
   " customize statusline and display usefull infos
   set laststatus=2
-  set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+  set statusline=%{rvm#statusline()}\ %<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
   " enable solarized colorcheme
   syntax enable
   set background=dark
