@@ -208,3 +208,5 @@ map <leader>v :view %%
 au BufNewFile,BufRead *.io set filetype=io
 
 nnoremap t <C-]>
+map <leader>tn :tn<CR>
+map <leader>tp :tp<CR>
