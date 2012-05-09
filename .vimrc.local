@@ -199,6 +199,8 @@ map <leader>gl :CommandT lib<cr>
 " switch between the last two files
 nnoremap <leader><leader> <c-^>
 
+nnoremap <leader>gs :SyntasticToggleMode<cr>
+
 " Edit or view files in same directory as current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
