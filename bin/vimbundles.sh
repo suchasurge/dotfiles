@@ -59,4 +59,3 @@ get_bundle kchmck vim-coffee-script
 get_bundle wincent Command-T
 get_bundle jgdavey vim-railscasts
 get_bundle godlygeek tabular
-get_bundle KohPoll vim-less
