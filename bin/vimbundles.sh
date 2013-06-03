@@ -60,3 +60,4 @@ get_bundle wincent Command-T
 get_bundle jgdavey vim-railscasts
 get_bundle godlygeek tabular
 get_bundle Lokaltog vim-powerline
+get_bundle groenewege vim-less
