@@ -89,27 +89,11 @@ function! s:align()
   endif
 endfunction
 
-
-" command to open files with uncommitted changes
-" https://github.com/garybernhardt/dotfiles/commit/86d12f24cd2301af99a2966f0dc9a082cdee2cb7
-function! OpenChangedFiles()
-  only " Close all windows, unless they're modified
-  let status = system('git ls-files -m')
-  let filenames = split(status, "\n")
-  exec "edit " . filenames[0]
-  for filename in filenames[1:]
-    exec "sp " . filename
-  endfor
-endfunction
-command! OpenChangedFiles :call OpenChangedFiles()
-
-
 " Keep Block visually marked when indenting
 nmap > ><CR>gv
 nmap < <<CR>gv
 vmap > ><CR>gv
 vmap < <<CR>gv
-
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -138,60 +122,6 @@ endif
 
 let g:private_snippets_dir = "~/.vim/snippets/"
 
-
-
-""""""""""""""""""""""""""""""""""""""""
-"" Run Rspec tests
-""""""""""""""""""""""""""""""""""""""""
-
-function! RunTests(filename)
-  " Write the file and run tests for the given filename
-  :w
-  :silent !echo;echo;echo;echo;echo
-  if match(a:filename, '\.feature$') != -1
-    exec ":!bundle exec cucumber " . a:filename
-  else
-    if filereadable("script/test")
-      exec ":!script/test " . a:filename
-    elsif filereadable("Gemfile")
-      exec ":!bundle exec rspec --color " . a:filename
-    else
-      exec ":!rspec --color " . a:filename
-    end
-  end
-endfunction
-
-function! SetTestFile()
-  " Set the spec file that tests will be run for.
-  let t:suchasurge_test_file=@%
-endfunction
-
-" Run spec test under the cursor
-function! RunTestFile(...)
-  if a:0
-    let command_suffix = a:1
-  else
-    let command_suffix = ""
-  endif
-
-  " Run the tests for the previously-marked file.
-  let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\)$') != -1
-  if in_test_file
-    call SetTestFile()
-  elseif !exists("t:suchasurge_test_file")
-    return
-  end
-  call RunTests(t:suchasurge_test_file . command_suffix)
-endfunction
-
-function! RunNearestTest()
-  let spec_line_number = line('.')
-  call RunTestFile(":" . spec_line_number)
-endfunction
-
-map <leader>t :call RunTestFile()<cr>
-map <leader>T :call RunNearestTest()<cr>
-
 "" Open files with <leader>f
 map <leader>f :CommandT<cr>
 " Open files, limited to the directory of the current file, with <leader>gf
@@ -219,3 +149,25 @@ au BufNewFile,BufRead *.io set filetype=io
 nnoremap t <C-]>
 map <leader>tn :tn<CR>
 map <leader>tp :tp<CR>
+
+
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" vim-go: disable fmt errors because syntastic already does the job
+let g:go_fmt_autosave = 1
+let g:go_fmt_fail_silently = 0
+
+" Go related mappings
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gr <Plug>(go-run)
+au FileType go nmap <Leader>gb <Plug>(go-build)
+au FileType go nmap <Leader>gt <Plug>(go-test)
+au FileType go nmap <Leader>gc <Plug>(go-coverage)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)

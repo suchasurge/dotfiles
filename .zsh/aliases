@@ -28,8 +28,6 @@ alias grep='grep --color=auto'
 alias %=' '
 
 # Ubi stuff...
-alias ubi_four='ssh root@four.ubilabs.net'
-alias ci_server='ssh joe@192.168.1.108'
 
 # Private stuff
 alias eulando_server='ssh root@50.22.248.35'
@@ -42,8 +40,7 @@ alias postgres_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias redis_start="redis-server /usr/local/etc/redis.conf"
 
 # use mac_vim terminal app
-alias vim='~/Developer/Cellar/macvim/7.3-61/MacVim.app/Contents/MacOS/Vim'
-alias vim='/usr/local/Cellar/macvim/7.3-64/MacVim.app/Contents/MacOS/Vim'
+alias vim='/usr/local/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim'
 
 # open specific pow app log
 powlog() { less ~/Library/Logs/Pow/apps/$1.log }

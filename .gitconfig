@@ -1,5 +1,5 @@
 [user]
-	name = Frank
+	name = suchasurge
 	email = frank@heidjer.info
 [diff]
 [color]
@@ -33,3 +33,14 @@
 
 [mergetool]
 	keepBackup = false
+[core]
+	excludesfile = /Users/fmueller/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[push]
+	default = matching
+[credential]
+	helper = osxkeychain
+[heroku]
+	account = personal

@@ -61,3 +61,6 @@ get_bundle jgdavey vim-railscasts
 get_bundle godlygeek tabular
 get_bundle Lokaltog vim-powerline
 get_bundle groenewege vim-less
+get_bundle elixir-lang vim-elixir
+get_bundle fatih vim-go
+get_bundle Shougo neocomplete.vim
